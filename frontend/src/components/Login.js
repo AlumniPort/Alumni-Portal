@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/login', { email, password });
+      const response = await axios.post('http://192.168.29.84:5000/api/users/login', { email, password });
       setMessage(`Welcome ${response.data.email}!`);
     } catch (error) {
       setMessage('Login failed. Please check your credentials.');

@@ -25,7 +25,7 @@ const Verification = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/verify', formData);
+      await axios.post('http://192.168.29.84:5000/api/users/verify', formData);
       setMessage('Your verification status is pending. Check your mail for further updates.');
     } catch (error) {
       setMessage('Your Data has been Recorded but it did not match with the university data. For now your status is pending..');

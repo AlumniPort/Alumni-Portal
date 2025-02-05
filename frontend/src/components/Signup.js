@@ -12,7 +12,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/signup', {
+      const response = await axios.post('http://192.168.29.84:5000/api/users/signup', {
         full_name: fullName,
         email,
         password,
